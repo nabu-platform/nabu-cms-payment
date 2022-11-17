@@ -1,0 +1,12 @@
+<structure collectionName="productSubscriptionInstancePayments" name="productSubscriptionInstancePayment">
+    <field name="id" pattern="[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}|[0-9a-fA-F]{32}" primaryKey="true" type="java.util.UUID"/>
+    <field foreignKey="nabu.cms.payment.database.types.productSubscriptionInstance:id" name="productSubscriptionInstanceId" pattern="[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}|[0-9a-fA-F]{32}" type="java.util.UUID"/>
+    <field name="created" timezone="UTC" type="java.util.Date"/>
+    <field minOccurs="0" name="paid" timezone="UTC" type="java.util.Date"/>
+    <field minOccurs="0" name="basePrice" type="java.lang.Double"/>
+    <field name="unitPrice" type="java.lang.Double"/>
+    <field name="totalPrice" type="java.lang.Double"/>
+    <field name="unitAmount" type="java.lang.Long"/>
+    <field foreignKey="nabu.cms.core.types.emodel.core.MasterDataEntry:id" minOccurs="0" name="currencyId" pattern="[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}|[0-9a-fA-F]{32}" type="java.util.UUID"/>
+    <field comment="When you want to add a unit to your subscription while it is active, we need to recalculate the price based on unit price and original duration. E.g you paid 10€ for 1 year for 1 unit, that means 5€ for 6 months for 1 unit." minOccurs="0" name="duration" type="be.nabu.libs.types.base.Duration"/>
+</structure>

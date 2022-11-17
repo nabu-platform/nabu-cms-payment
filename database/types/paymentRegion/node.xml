@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<node artifactManager="be.nabu.eai.module.types.structure.StructureManager" created="2022-11-16T11:04:56.368+01:00" lastModified="2022-11-16T11:51:45.665+01:00" leaf="true" version="3">
+    <environmentId>apollo</environmentId>
+    <hidden>false</hidden>
+    <properties/>
+    <references>nabu.cms.core.types.emodel.core.MasterDataEntry</references>
+    <references>java.lang.String</references>
+    <references>java.util.UUID</references>
+</node>

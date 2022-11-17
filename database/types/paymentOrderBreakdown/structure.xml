@@ -1,0 +1,7 @@
+<structure collectionName="paymentOrderBreakdowns" comment="Contains breakdowns for the total price in the order in so far as they are NOT based on the entries.&#10;A good example of this is the transport price" name="paymentOrderBreakdown">
+    <field name="id" pattern="[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}|[0-9a-fA-F]{32}" primaryKey="true" type="java.util.UUID"/>
+    <field name="price" type="java.lang.Double"/>
+    <field foreignKey="nabu.cms.core.types.emodel.core.MasterDataEntry:id" name="breakdownTypeId" pattern="[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}|[0-9a-fA-F]{32}" type="java.util.UUID"/>
+    <field foreignKey="nabu.cms.payment.database.types.paymentOrder:id" name="paymentOrderId" pattern="[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}|[0-9a-fA-F]{32}" type="java.util.UUID"/>
+    <field minOccurs="0" name="description" type="java.lang.String"/>
+</structure>

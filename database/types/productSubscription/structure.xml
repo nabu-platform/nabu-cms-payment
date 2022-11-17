@@ -1,0 +1,1 @@
+<structure collectionName="productSubscriptions" comment="The definition of a subscription.&#10;" duplicate="id,created,modified" name="productSubscription" superType="nabu.cms.core.types.emodel.core.Node"/>
