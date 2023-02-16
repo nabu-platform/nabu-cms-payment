@@ -1,7 +1,7 @@
 <structure collectionName="paymentOrders" duplicate="id,created,modified" name="paymentOrder" superType="nabu.cms.core.types.emodel.core.Node">
     <field comment="Exclusive vat" name="totalPrice" type="java.lang.Double"/>
     <field minOccurs="0" name="totalVat" type="java.lang.Double"/>
-    <field minOccurs="0" name="vatRegimeId" pattern="[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}|[0-9a-fA-F]{32}" type="java.util.UUID"/>
+    <field foreignKey="nabu.cms.payment.database.types.paymentVatRegime:id" minOccurs="0" name="vatRegimeId" pattern="[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}|[0-9a-fA-F]{32}" type="java.util.UUID"/>
     <field comment="If filled in, this is the currency that the price is expressed in. If not filled in, we assume a default for your application." foreignKey="nabu.cms.core.types.emodel.core.MasterDataEntry:id" minOccurs="0" name="currencyId" pattern="[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}|[0-9a-fA-F]{32}" type="java.util.UUID"/>
     <field minOccurs="0" name="paid" timezone="UTC" type="java.util.Date"/>
     <field minOccurs="0" name="cancelled" timezone="UTC" type="java.util.Date"/>

@@ -4,4 +4,5 @@
     <field comment="The feature that this subscription enables" foreignKey="nabu.cms.core.types.emodel.core.MasterDataEntry:id" name="featureId" pattern="[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}|[0-9a-fA-F]{32}" type="java.util.UUID"/>
     <field minOccurs="0" name="description" type="java.lang.String"/>
     <field comment="The priority of the feature during visualization" minOccurs="0" name="priority" type="java.lang.Long"/>
+    <field comment="In some examples you want an &quot;amount&quot; of a certain feature. For example the free tier gets 1 user, small gets 3 users and enterprise gets 100 users. Same feature, different amount." minOccurs="0" name="amount" type="java.lang.Long"/>
 </structure>

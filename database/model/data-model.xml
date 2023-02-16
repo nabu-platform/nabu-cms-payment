@@ -30,14 +30,14 @@
     <entries>
         <synchronize>true</synchronize>
         <type>nabu.cms.payment.database.types.productSubscriptionLevel</type>
-        <x>508</x>
-        <y>321</y>
+        <x>403</x>
+        <y>180</y>
     </entries>
     <entries>
         <synchronize>true</synchronize>
         <type>nabu.cms.payment.database.types.productSubscriptionInstance</type>
-        <x>858</x>
-        <y>42</y>
+        <x>910</x>
+        <y>1</y>
     </entries>
     <entries>
         <synchronize>true</synchronize>
@@ -47,7 +47,6 @@
     </entries>
     <entries>
         <synchronize>true</synchronize>
-        <type>nabu.cms.payment.database.types.productSubscriptionInstancePayment</type>
         <x>958</x>
         <y>237</y>
     </entries>
@@ -92,5 +91,17 @@
         <type>nabu.cms.payment.database.types.paymentProvider</type>
         <x>502</x>
         <y>936</y>
+    </entries>
+    <entries>
+        <synchronize>true</synchronize>
+        <type>nabu.cms.payment.database.types.productSubscriptionInstancePeriod</type>
+        <x>914</x>
+        <y>253</y>
+    </entries>
+    <entries>
+        <synchronize>true</synchronize>
+        <type>nabu.cms.payment.database.types.paymentVatRegime</type>
+        <x>1047</x>
+        <y>963</y>
     </entries>
 </dataModel>

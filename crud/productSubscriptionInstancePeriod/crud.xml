@@ -3,7 +3,7 @@
     <allowHeaderAsQueryParameter>true</allowHeaderAsQueryParameter>
     <broadcastCreate>false</broadcastCreate>
     <broadcastUpdate>false</broadcastUpdate>
-    <coreType>nabu.cms.payment.database.types.productSubscriptionInstancePayment</coreType>
+    <coreType>nabu.cms.payment.database.types.productSubscriptionInstancePeriod</coreType>
     <createBlacklistFields>created</createBlacklistFields>
     <createRole>$user</createRole>
     <deleteRole>$user</deleteRole>
@@ -47,6 +47,7 @@
     <updateBlacklistFields>created</updateBlacklistFields>
     <updateRole>$user</updateRole>
     <useExplicitLanguage>false</useExplicitLanguage>
+    <useGlobalPermissionContext>false</useGlobalPermissionContext>
     <useLanguage>false</useLanguage>
     <useListOutputForCreate>true</useListOutputForCreate>
     <useListOutputForUpdate>true</useListOutputForUpdate>

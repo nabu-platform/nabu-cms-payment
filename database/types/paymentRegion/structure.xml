@@ -1,4 +1,5 @@
 <structure collectionName="paymentRegions" duplicate="id,created,modified" name="paymentRegion" superType="nabu.cms.core.types.emodel.core.MasterDataEntry">
     <field comment="If it has an official locale, it is set here" minOccurs="0" name="locale" type="java.lang.String"/>
-    <field comment="The default currency for this region. Alternative currencies can be added later." minOccurs="0" name="defaultCurrencyId" pattern="[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}|[0-9a-fA-F]{32}" type="java.util.UUID"/>
+    <field comment="The default currency for this region. Alternative currencies can be added later." foreignKey="nabu.cms.core.types.emodel.core.MasterDataEntry:id" minOccurs="0" name="defaultCurrencyId" pattern="[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}|[0-9a-fA-F]{32}" type="java.util.UUID"/>
+    <field foreignKey="nabu.cms.payment.database.types.paymentVatRegime:id" minOccurs="0" name="defaultVatRegimeId" pattern="[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}|[0-9a-fA-F]{32}" type="java.util.UUID"/>
 </structure>

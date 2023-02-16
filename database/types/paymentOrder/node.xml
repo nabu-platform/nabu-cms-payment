@@ -1,10 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<node artifactManager="be.nabu.eai.module.types.structure.StructureManager" created="2022-11-16T12:14:13.331+01:00" lastModified="2022-11-16T12:38:24.339+01:00" leaf="true" version="6">
+<node artifactManager="be.nabu.eai.module.types.structure.StructureManager" created="2022-11-16T12:14:13.331+01:00" lastModified="2023-02-01T10:51:06.654+01:00" leaf="true" version="8">
     <environmentId>apollo</environmentId>
     <hidden>false</hidden>
+    <locked>false</locked>
     <properties/>
     <references>nabu.cms.core.types.emodel.core.Node</references>
     <references>java.lang.Double</references>
+    <references>nabu.cms.payment.database.types.paymentVatRegime</references>
     <references>java.util.UUID</references>
     <references>nabu.cms.core.types.emodel.core.MasterDataEntry</references>
     <references>java.util.Date</references>

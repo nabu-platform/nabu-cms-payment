@@ -1,0 +1,3 @@
+<structure collectionName="paymentVatRegimes" duplicate="id,created,modified" name="paymentVatRegime" superType="nabu.cms.core.types.emodel.core.MasterDataEntry">
+    <field comment="The applicable percentage" minOccurs="0" name="vatPercentage" type="java.lang.Double"/>
+</structure>

@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<node artifactManager="be.nabu.eai.module.data.model.DataModelManager" created="2022-11-16T10:27:36.770+01:00" lastModified="2022-11-17T12:06:56.420+01:00" leaf="true" version="97">
+<node artifactManager="be.nabu.eai.module.data.model.DataModelManager" created="2022-11-16T10:27:36.770+01:00" lastModified="2023-02-01T10:52:49.215+01:00" leaf="true" version="130">
     <environmentId>apollo</environmentId>
     <hidden>false</hidden>
+    <locked>false</locked>
     <properties/>
     <references>nabu.cms.payment.database.types.paymentRegion</references>
     <references>nabu.cms.payment.database.types.productSubscription</references>
     <references>nabu.cms.payment.database.types.productSubscriptionLevel</references>
     <references>nabu.cms.payment.database.types.productSubscriptionInstance</references>
     <references>nabu.cms.payment.database.types.productSubscriptionFeature</references>
-    <references>nabu.cms.payment.database.types.productSubscriptionInstancePayment</references>
     <references>nabu.cms.core.types.emodel.core.MasterDataEntry</references>
     <references>nabu.cms.payment.database.types.paymentOrder</references>
     <references>nabu.cms.payment.database.types.paymentOrderBreakdown</references>
@@ -16,4 +16,6 @@
     <references>nabu.cms.payment.database.types.paymentOrderEntryBreakdown</references>
     <references>nabu.cms.core.types.emodel.core.Node</references>
     <references>nabu.cms.payment.database.types.paymentProvider</references>
+    <references>nabu.cms.payment.database.types.productSubscriptionInstancePeriod</references>
+    <references>nabu.cms.payment.database.types.paymentVatRegime</references>
 </node>
