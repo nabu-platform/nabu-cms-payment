@@ -6,4 +6,5 @@
     <field minOccurs="0" name="paid" timezone="UTC" type="java.util.Date"/>
     <field minOccurs="0" name="cancelled" timezone="UTC" type="java.util.Date"/>
     <field foreignKey="nabu.cms.payment.database.types.paymentProvider:id" minOccurs="0" name="paymentProviderId" pattern="[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}|[0-9a-fA-F]{32}" type="java.util.UUID"/>
+    <field generated="true" name="orderIndex" type="java.lang.Long"/>
 </structure>

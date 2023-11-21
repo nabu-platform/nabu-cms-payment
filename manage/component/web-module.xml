@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<webModule>
+    <webFragments>nabu.cms.payment.crud.paymentOrder</webFragments>
+    <webFragments>nabu.cms.payment.crud.paymentOrderBreakdown</webFragments>
+    <webFragments>nabu.cms.payment.crud.paymentOrderEntry</webFragments>
+    <webFragments>nabu.cms.payment.crud.paymentOrderEntryBreakdown</webFragments>
+    <webFragments>nabu.cms.payment.crud.paymentProvider</webFragments>
+    <webFragments>nabu.cms.payment.crud.paymentRegion</webFragments>
+    <webFragments>nabu.cms.payment.crud.paymentVatRegime</webFragments>
+    <webFragments>nabu.cms.payment.crud.productSubscription</webFragments>
+    <webFragments>nabu.cms.payment.crud.productSubscriptionFeature</webFragments>
+    <webFragments>nabu.cms.payment.crud.productSubscriptionInstance</webFragments>
+    <webFragments>nabu.cms.payment.crud.productSubscriptionInstancePeriod</webFragments>
+    <webFragments>nabu.cms.payment.crud.productSubscriptionLevel</webFragments>
+</webModule>

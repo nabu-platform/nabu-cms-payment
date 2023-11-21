@@ -1,0 +1,85 @@
+<sequence xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		disabled="false"
+		id="f304b54b-8422-4575-9823-43fc3fdf5f55"
+		lineNumber="1">
+	<steps xsi:type="be.nabu.libs.services.vm.step.Map"
+			disabled="false"
+			id="7548b7f2460b41aead2157a6aae107b3"
+			lineNumber="2">
+		<steps xsi:type="be.nabu.libs.services.vm.step.Invoke"
+				disabled="false"
+				id="dd8e5ff1a16447ecba8cb942c56419e9"
+				serviceId="nabu.cms.payment.crud.productSubscriptionInstance.services.get"
+				resultName="resultc6120c14a94c443788ebb6916c474f61"
+				temporaryMapping="true"
+				x="238"
+				y="198"
+				invocationOrder="0"
+				asynchronous="false"
+				recache="false">
+			<steps xsi:type="be.nabu.libs.services.vm.step.Link"
+					disabled="false"
+					id="42b2f42461f640b0af7ebf995ce3186f"
+					mask="false"
+					optional="false"
+					fixedValue="false">
+				<from>input/context</from>
+				<to>id</to>
+			</steps>
+		</steps>
+		<steps xsi:type="be.nabu.libs.services.vm.step.Link"
+				disabled="false"
+				id="940b84c57dce43fcaf331058ffbb49ea"
+				mask="false"
+				optional="false"
+				fixedValue="false">
+			<from>resultc6120c14a94c443788ebb6916c474f61/result</from>
+			<to>subscriptionInstance</to>
+		</steps>
+	</steps>
+	<steps xsi:type="be.nabu.libs.services.vm.step.Map"
+			disabled="false"
+			id="27885e37-337b-4c16-9e22-a49c8d51302d"
+			label="subscriptionInstance/productSubscriptionId != null"
+			lineNumber="3">
+		<steps xsi:type="be.nabu.libs.services.vm.step.Invoke"
+				disabled="false"
+				id="ec1fa6b6-8b5c-4cd2-b777-053cfb4b40a0"
+				serviceId="nabu.cms.core.crud.node.services.get"
+				resultName="result262c574c97cc4f979cd022af77636528"
+				temporaryMapping="true"
+				x="96"
+				y="73"
+				invocationOrder="0"
+				asynchronous="false"
+				recache="false">
+			<steps xsi:type="be.nabu.libs.services.vm.step.Link"
+					disabled="false"
+					id="25f22a97c3c94a49beef67f256bee142"
+					mask="false"
+					optional="false"
+					fixedValue="false">
+				<from>subscriptionInstance/productSubscriptionId</from>
+				<to>id</to>
+			</steps>
+		</steps>
+		<steps xsi:type="be.nabu.libs.services.vm.step.Link"
+				disabled="false"
+				id="f9fcb6bb-d22c-4547-ac76-f732f2c00b4e"
+				mask="false"
+				optional="false"
+				fixedValue="false">
+			<from>result262c574c97cc4f979cd022af77636528/result</from>
+			<to>output/context</to>
+		</steps>
+		<steps xsi:type="be.nabu.libs.services.vm.step.Link"
+				disabled="false"
+				id="4c3a3915-53c6-4dc2-840f-44ba713595c2"
+				mask="true"
+				optional="false"
+				fixedValue="false">
+			<from>result262c574c97cc4f979cd022af77636528/result</from>
+			<to>output/node</to>
+		</steps>
+	</steps>
+</sequence>

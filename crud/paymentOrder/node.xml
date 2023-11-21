@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<node artifactManager="be.nabu.eai.module.services.crud.CRUDArtifactManager" created="2022-11-17T11:42:48.037+01:00" lastModified="2022-11-17T11:55:29.854+01:00" leaf="false" version="11">
+<node artifactManager="be.nabu.eai.module.services.crud.CRUDArtifactManager" created="2022-11-17T11:42:48.037+01:00" lastModified="2023-11-16T12:27:51.896+01:00" leaf="false" version="12">
     <environmentId>apollo</environmentId>
     <hidden>false</hidden>
+    <locked>false</locked>
     <properties/>
     <references>nabu.cms.payment.database.types.paymentOrder</references>
     <references>nabu.cms.core.providers.crud.enode.provider</references>

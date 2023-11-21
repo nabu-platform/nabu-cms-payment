@@ -8,7 +8,9 @@
     <createBlacklistFields>slug</createBlacklistFields>
     <createBlacklistFields>verified</createBlacklistFields>
     <createBlacklistFields>componentId</createBlacklistFields>
+    <createPermission>payment.manage</createPermission>
     <createRole>$user</createRole>
+    <deletePermission>payment.manage</deletePermission>
     <deleteRole>$user</deleteRole>
     <filters>
         <caseInsensitive>false</caseInsensitive>
@@ -70,6 +72,9 @@
         <input>true</input>
         <vary>false</vary>
     </filters>
+    <getPermission>payment.list</getPermission>
+    <hooks>false</hooks>
+    <listPermission>payment.list</listPermission>
     <listRole>$user</listRole>
     <provider>nabu.cms.core.providers.crud.enode.provider</provider>
     <restLimitToUser>true</restLimitToUser>
@@ -78,9 +83,12 @@
     <updateBlacklistFields>modified</updateBlacklistFields>
     <updateBlacklistFields>verified</updateBlacklistFields>
     <updateBlacklistFields>slug</updateBlacklistFields>
+    <updatePermission>payment.manage</updatePermission>
     <updateRegenerateFields>modified</updateRegenerateFields>
     <updateRole>$user</updateRole>
+    <useAsAuthorizationServiceContext>false</useAsAuthorizationServiceContext>
     <useExplicitLanguage>false</useExplicitLanguage>
+    <useGlobalPermissionContext>false</useGlobalPermissionContext>
     <useLanguage>false</useLanguage>
     <useListOutputForCreate>true</useListOutputForCreate>
     <useListOutputForUpdate>true</useListOutputForUpdate>
